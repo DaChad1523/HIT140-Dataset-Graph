@@ -11,10 +11,6 @@ dataset1 = pd.read_csv("dataset1.csv")
 Male = dataset1[dataset1['gender'] == 1]
 Gender_Other = dataset1[dataset1['gender'] == 0]
 
-#Mean
-Mean_Male = Male['gender'].mean()
-Mean_Male_Other = Gender_Other['gender'].mean()
-
 Minority = dataset1[dataset1['minority'] == 1]
 Minority_Other = dataset1[dataset1['minority'] == 0]
 
