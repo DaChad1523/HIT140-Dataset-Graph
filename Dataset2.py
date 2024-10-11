@@ -20,10 +20,64 @@ Seven_Hour_PC_Weekend = len(dataset2[dataset2['C_we'] == 7])
 One_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 1])
 Two_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 2])
 Three_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 3])
-Four_Hour_PC_Weekday= len(dataset2[dataset2['C_wk'] == 4])
+Four_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 4])
 Five_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 5])
-Six_Hour_PC_Weekday= len(dataset2[dataset2['C_wk'] == 6])
+Six_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 6])
 Seven_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 7])
+
+#Video Game usage on weekends
+One_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 1])
+Two_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 2])
+Three_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 3])
+Four_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 4])
+Five_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 5])
+Six_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 6])
+Seven_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 7])
+
+#Video Game usage on weekdays
+One_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 1])
+Two_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 2])
+Three_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 3])
+Four_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 4])
+Five_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 5])
+Six_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 6])
+Seven_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 7])
+
+#Smartphone usage on weekends
+One_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 1])
+Two_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 2])
+Three_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 3])
+Four_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 4])
+Five_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 5])
+Six_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 6])
+Seven_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 7])
+
+#Smartphone usage on weekdays
+One_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 1])
+Two_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 2])
+Three_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 3])
+Four_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 4])
+Five_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 5])
+Six_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 6])
+Seven_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 7])
+
+#TV usage on weekends
+One_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 1])
+Two_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 2])
+Three_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 3])
+Four_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 4])
+Five_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 5])
+Six_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 6])
+Seven_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 7])
+
+#TV usage on weekdays
+One_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 1])
+Two_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 2])
+Three_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 3])
+Four_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 4])
+Five_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 5])
+Six_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 6])
+Seven_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 7])
 
 #Amount on PC usage weekend and weekdays (can't be bother to repeat storing int with .5)
 print("PC usage on weekends",
