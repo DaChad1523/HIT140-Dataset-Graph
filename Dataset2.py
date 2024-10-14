@@ -109,6 +109,7 @@ print("PC usage on weekdays",
       "\n5 Hour PC usage: " + str(Five_Hour_PC_Weekday),
       "\n6 Hour PC usage: " + str(Six_Hour_PC_Weekday),
       "\n7 Hour PC usage: " + str(Seven_Hour_PC_Weekday))
+print("")
 
 #Video games usage:
 print("Video game usage on weekends",
@@ -130,6 +131,7 @@ print("Video game usage on weekdays",
       "\n5 Hour VG usage: " + str(Five_Hour_VG_Weekday),
       "\n6 Hour VG usage: " + str(Six_Hour_VG_Weekday),
       "\n7 Hour VG usage: " + str(Seven_Hour_VG_Weekday))
+print("")
 
 #Smart phone usage:
 print("Smart phone usage on weekends",
@@ -151,6 +153,7 @@ print("Smart phone usage on weekdays",
       "\n5 Hour SP usage: " + str(Five_Hour_SP_Weekday),
       "\n6 Hour SP usage: " + str(Six_Hour_SP_Weekday),
       "\n7 Hour SP usage: " + str(Seven_Hour_SP_Weekday))
+print("")
 
 #TV usage:
 print("TV usage on weekends",
@@ -172,8 +175,9 @@ print("TV usage on weekdays",
       "\n5 Hour TV usage: " + str(Five_Hour_TV_Weekday),
       "\n6 Hour TV usage: " + str(Six_Hour_TV_Weekday),
       "\n7 Hour TV usage: " + str(Seven_Hour_TV_Weekday))
+print("")
 
-
+#PC:
 Total_PC_we = ( Half_Hour_PC_Weekend +
                 One_Hour_PC_Weekend +
                 Two_Hour_PC_Weekend +
@@ -191,8 +195,71 @@ Total_PC_wk = ( Half_Hour_PC_Weekday +
                 Five_Hour_PC_Weekday + 
                 Six_Hour_PC_Weekday + 
                 Seven_Hour_PC_Weekday)
+#Video Games:
+Total_VG_we = ( Half_Hour_VG_Weekend +
+                One_Hour_VG_Weekend +
+                Two_Hour_VG_Weekend +
+                Three_Hour_VG_Weekend + 
+                Four_Hour_VG_Weekend + 
+                Five_Hour_VG_Weekend + 
+                Six_Hour_VG_Weekend + 
+                Seven_Hour_VG_Weekend)
 
-print(f"PC weekend: ")
-print(f"PC weekday: ")
+Total_VG_wk = ( Half_Hour_VG_Weekday +
+                One_Hour_VG_Weekday +
+                Two_Hour_VG_Weekday +
+                Three_Hour_VG_Weekday + 
+                Four_Hour_VG_Weekday + 
+                Five_Hour_VG_Weekday + 
+                Six_Hour_VG_Weekday + 
+                Seven_Hour_VG_Weekday)
+#Smartphone:
+Total_SP_we = ( Half_Hour_SP_Weekend +
+                One_Hour_SP_Weekend +
+                Two_Hour_SP_Weekend +
+                Three_Hour_SP_Weekend + 
+                Four_Hour_SP_Weekend + 
+                Five_Hour_SP_Weekend + 
+                Six_Hour_SP_Weekend + 
+                Seven_Hour_SP_Weekend)
 
-print (f"Total: ", Total_PC_we + Total_PC_wk)
+Total_SP_wk = ( Half_Hour_SP_Weekday +
+                One_Hour_SP_Weekday +
+                Two_Hour_SP_Weekday +
+                Three_Hour_SP_Weekday + 
+                Four_Hour_SP_Weekday + 
+                Five_Hour_SP_Weekday + 
+                Six_Hour_SP_Weekday + 
+                Seven_Hour_SP_Weekday)
+#TV:
+Total_TV_we = ( Half_Hour_TV_Weekend +
+                One_Hour_TV_Weekend +
+                Two_Hour_TV_Weekend +
+                Three_Hour_TV_Weekend + 
+                Four_Hour_TV_Weekend + 
+                Five_Hour_TV_Weekend + 
+                Six_Hour_TV_Weekend + 
+                Seven_Hour_TV_Weekend)
+
+Total_TV_wk = ( Half_Hour_TV_Weekday +
+                One_Hour_TV_Weekday +
+                Two_Hour_TV_Weekday +
+                Three_Hour_TV_Weekday + 
+                Four_Hour_TV_Weekday + 
+                Five_Hour_TV_Weekday + 
+                Six_Hour_TV_Weekday + 
+                Seven_Hour_TV_Weekday)
+print("")
+print(f"PC weekend: ", Total_PC_we)
+print(f"PC weekday: ", Total_PC_wk)
+
+print(f"Video game weekend: ", Total_VG_we)
+print(f"Video game weekday: ", Total_VG_wk)
+
+print(f"Smartphone weekend: ", Total_SP_we)
+print(f"Smartphone weekday: ", Total_SP_wk)
+
+print(f"TSmartphone weekend: ", Total_TV_we)
+print(f"Smartphone weekday: ", Total_TV_wk)
+print("")
+print (f"Total: ", Total_PC_we + Total_PC_wk + Total_VG_we + Total_VG_wk + Total_SP_we + Total_SP_wk + Total_TV_we + Total_TV_wk)
