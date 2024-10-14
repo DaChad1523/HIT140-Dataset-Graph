@@ -79,7 +79,7 @@ Six_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 6])
 Seven_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 7])
 
 #TV usage on weekdays
-Half_Hour_TV_Weekend = len(dataset2[dataset2['T_wk'] == 0.5])
+Half_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 0.5])
 One_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 1])
 Two_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 2])
 Three_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 3])
@@ -88,8 +88,7 @@ Five_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 5])
 Six_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 6])
 Seven_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 7])
 
-#Amount on PC usage weekend and weekdays (can't be bother to repeat storing int with .5)
-
+#PC usage:
 print("PC usage on weekends",
       "\n1 Less then an hour PC usage: " + str(Half_Hour_PC_Weekend),
       "\n1 Hour PC usage: " + str(One_Hour_PC_Weekend),
@@ -110,6 +109,69 @@ print("PC usage on weekdays",
       "\n5 Hour PC usage: " + str(Five_Hour_PC_Weekday),
       "\n6 Hour PC usage: " + str(Six_Hour_PC_Weekday),
       "\n7 Hour PC usage: " + str(Seven_Hour_PC_Weekday))
+
+#Video games usage:
+print("Video game usage on weekends",
+      "\n1 Less then an hour VG usage: " + str(Half_Hour_VG_Weekend),
+      "\n1 Hour VG usage: " + str(One_Hour_VG_Weekend),
+      "\n2 Hour VG usage: " + str(Two_Hour_VG_Weekend),
+      "\n3 Hour VG usage: " + str(Three_Hour_VG_Weekend),
+      "\n4 Hour VG usage: " + str(Four_Hour_VG_Weekend),
+      "\n5 Hour VG usage: " + str(Five_Hour_VG_Weekend),
+      "\n6 Hour VG usage: " + str(Six_Hour_VG_Weekend),
+      "\n7 Hour VG usage: " + str(Seven_Hour_VG_Weekend))
+
+print("Video game usage on weekdays",
+      "\n1 Less then an hour VG usage: " + str(Half_Hour_VG_Weekday),
+      "\n1 Hour VG usage: " + str(One_Hour_VG_Weekday),
+      "\n2 Hour VG usage: " + str(Two_Hour_VG_Weekday),
+      "\n3 Hour VG usage: " + str(Three_Hour_VG_Weekday),
+      "\n4 Hour VG usage: " + str(Four_Hour_VG_Weekday),
+      "\n5 Hour VG usage: " + str(Five_Hour_VG_Weekday),
+      "\n6 Hour VG usage: " + str(Six_Hour_VG_Weekday),
+      "\n7 Hour VG usage: " + str(Seven_Hour_VG_Weekday))
+
+#Smart phone usage:
+print("Smart phone usage on weekends",
+      "\n1 Less then an hour SP usage: " + str(Half_Hour_SP_Weekend),
+      "\n1 Hour SP usage: " + str(One_Hour_SP_Weekend),
+      "\n2 Hour SP usage: " + str(Two_Hour_SP_Weekend),
+      "\n3 Hour SP usage: " + str(Three_Hour_SP_Weekend),
+      "\n4 Hour SP usage: " + str(Four_Hour_SP_Weekend),
+      "\n5 Hour SP usage: " + str(Five_Hour_SP_Weekend),
+      "\n6 Hour SP usage: " + str(Six_Hour_SP_Weekend),
+      "\n7 Hour SP usage: " + str(Seven_Hour_SP_Weekend))
+
+print("Smart phone usage on weekdays",
+      "\n1 Less then an hour SP usage: " + str(Half_Hour_SP_Weekday),
+      "\n1 Hour SP usage: " + str(One_Hour_SP_Weekday),
+      "\n2 Hour SP usage: " + str(Two_Hour_SP_Weekday),
+      "\n3 Hour SP usage: " + str(Three_Hour_SP_Weekday),
+      "\n4 Hour SP usage: " + str(Four_Hour_SP_Weekday),
+      "\n5 Hour SP usage: " + str(Five_Hour_SP_Weekday),
+      "\n6 Hour SP usage: " + str(Six_Hour_SP_Weekday),
+      "\n7 Hour SP usage: " + str(Seven_Hour_SP_Weekday))
+
+#TV usage:
+print("TV usage on weekends",
+      "\n1 Less then an hour TV usage: " + str(Half_Hour_TV_Weekend),
+      "\n1 Hour TV usage: " + str(One_Hour_TV_Weekend),
+      "\n2 Hour TV usage: " + str(Two_Hour_TV_Weekend),
+      "\n3 Hour TV usage: " + str(Three_Hour_TV_Weekend),
+      "\n4 Hour TV usage: " + str(Four_Hour_TV_Weekend),
+      "\n5 Hour TV usage: " + str(Five_Hour_TV_Weekend),
+      "\n6 Hour TV usage: " + str(Six_Hour_TV_Weekend),
+      "\n7 Hour TV usage: " + str(Seven_Hour_TV_Weekend))
+
+print("TV usage on weekdays",
+      "\n1 Less then an hour TV usage: " + str(Half_Hour_TV_Weekday),
+      "\n1 Hour TV usage: " + str(One_Hour_TV_Weekday),
+      "\n2 Hour TV usage: " + str(Two_Hour_TV_Weekday),
+      "\n3 Hour TV usage: " + str(Three_Hour_TV_Weekday),
+      "\n4 Hour TV usage: " + str(Four_Hour_TV_Weekday),
+      "\n5 Hour TV usage: " + str(Five_Hour_TV_Weekday),
+      "\n6 Hour TV usage: " + str(Six_Hour_TV_Weekday),
+      "\n7 Hour TV usage: " + str(Seven_Hour_TV_Weekday))
 
 
 Total_PC_we = ( Half_Hour_PC_Weekend +
