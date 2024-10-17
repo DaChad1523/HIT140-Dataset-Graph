@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 dataset2 = pd.read_csv("dataset2.csv")
 
 #PC usage on weekends
+Zero_Hour_PC_Weekend = len(dataset2[dataset2['C_we'] == 0])
 Half_Hour_PC_Weekend = len(dataset2[dataset2['C_we'] == 0.5])
 One_Hour_PC_Weekend = len(dataset2[dataset2['C_we'] == 1])
 Two_Hour_PC_Weekend = len(dataset2[dataset2['C_we'] == 2])
@@ -19,7 +20,8 @@ Seven_Hour_PC_Weekend = len(dataset2[dataset2['C_we'] == 7])
 
 
 #PC usage on weekdays
-Half_Hour_PC_Weekday = len(dataset2[dataset2['C_we'] == 0.5])
+Zero_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 0])
+Half_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 0.5])
 One_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 1])
 Two_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 2])
 Three_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 3])
@@ -29,6 +31,7 @@ Six_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 6])
 Seven_Hour_PC_Weekday = len(dataset2[dataset2['C_wk'] == 7])
 
 #Video Game usage on weekends
+Zero_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 0])
 Half_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 0.5])
 One_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 1])
 Two_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 2])
@@ -39,6 +42,7 @@ Six_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 6])
 Seven_Hour_VG_Weekend = len(dataset2[dataset2['G_we'] == 7])
 
 #Video Game usage on weekdays
+Zero_Hour_VG_Weekday= len(dataset2[dataset2['G_wk'] == 0])
 Half_Hour_VG_Weekday= len(dataset2[dataset2['G_wk'] == 0.5])
 One_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 1])
 Two_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 2])
@@ -49,6 +53,7 @@ Six_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 6])
 Seven_Hour_VG_Weekday = len(dataset2[dataset2['G_wk'] == 7])
 
 #Smartphone usage on weekends
+Zero_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 0])
 Half_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 0.5])
 One_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 1])
 Two_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 2])
@@ -59,6 +64,7 @@ Six_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 6])
 Seven_Hour_SP_Weekend = len(dataset2[dataset2['S_we'] == 7])
 
 #Smartphone usage on weekdays
+Zero_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 0])
 Half_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 0.5])
 One_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 1])
 Two_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 2])
@@ -69,6 +75,7 @@ Six_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 6])
 Seven_Hour_SP_Weekday = len(dataset2[dataset2['G_wk'] == 7])
 
 #TV usage on weekends
+Zero_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 0])
 Half_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 0.5])
 One_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 1])
 Two_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 2])
@@ -79,6 +86,7 @@ Six_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 6])
 Seven_Hour_TV_Weekend = len(dataset2[dataset2['T_we'] == 7])
 
 #TV usage on weekdays
+Zero_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 0])
 Half_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 0.5])
 One_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 1])
 Two_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 2])
@@ -90,6 +98,7 @@ Seven_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 7])
 
 #PC usage:
 print("PC usage on weekends",
+      "\n No PC usage" + str(Zero_Hour_PC_Weekend),
       "\n1 Less then an hour PC usage: " + str(Half_Hour_PC_Weekend),
       "\n1 Hour PC usage: " + str(One_Hour_PC_Weekend),
       "\n2 Hour PC usage: " + str(Two_Hour_PC_Weekend),
@@ -101,6 +110,7 @@ print("PC usage on weekends",
  
 
 print("PC usage on weekdays",
+      "\n No PC usage" + str(Zero_Hour_PC_Weekday),
       "\n1 Less then an hour PC usage: " + str(Half_Hour_PC_Weekday),
       "\n1 Hour PC usage: " + str(One_Hour_PC_Weekday),
       "\n2 Hour PC usage: " + str(Two_Hour_PC_Weekday),
@@ -113,6 +123,7 @@ print("")
 
 #Video games usage:
 print("Video game usage on weekends",
+      "\n No VG usage" + str(Zero_Hour_VG_Weekend),
       "\n1 Less then an hour VG usage: " + str(Half_Hour_VG_Weekend),
       "\n1 Hour VG usage: " + str(One_Hour_VG_Weekend),
       "\n2 Hour VG usage: " + str(Two_Hour_VG_Weekend),
@@ -123,6 +134,7 @@ print("Video game usage on weekends",
       "\n7 Hour VG usage: " + str(Seven_Hour_VG_Weekend))
 
 print("Video game usage on weekdays",
+      "\n No VG usage" + str(Zero_Hour_VG_Weekday),
       "\n1 Less then an hour VG usage: " + str(Half_Hour_VG_Weekday),
       "\n1 Hour VG usage: " + str(One_Hour_VG_Weekday),
       "\n2 Hour VG usage: " + str(Two_Hour_VG_Weekday),
@@ -135,6 +147,7 @@ print("")
 
 #Smart phone usage:
 print("Smart phone usage on weekends",
+      "\n No SP usage" + str(Zero_Hour_SP_Weekend),
       "\n1 Less then an hour SP usage: " + str(Half_Hour_SP_Weekend),
       "\n1 Hour SP usage: " + str(One_Hour_SP_Weekend),
       "\n2 Hour SP usage: " + str(Two_Hour_SP_Weekend),
@@ -145,6 +158,7 @@ print("Smart phone usage on weekends",
       "\n7 Hour SP usage: " + str(Seven_Hour_SP_Weekend))
 
 print("Smart phone usage on weekdays",
+      "\n No SP usage" + str(Zero_Hour_SP_Weekday),
       "\n1 Less then an hour SP usage: " + str(Half_Hour_SP_Weekday),
       "\n1 Hour SP usage: " + str(One_Hour_SP_Weekday),
       "\n2 Hour SP usage: " + str(Two_Hour_SP_Weekday),
@@ -157,6 +171,7 @@ print("")
 
 #TV usage:
 print("TV usage on weekends",
+      "\n No TV usage" + str(Zero_Hour_TV_Weekend),
       "\n1 Less then an hour TV usage: " + str(Half_Hour_TV_Weekend),
       "\n1 Hour TV usage: " + str(One_Hour_TV_Weekend),
       "\n2 Hour TV usage: " + str(Two_Hour_TV_Weekend),
@@ -167,6 +182,7 @@ print("TV usage on weekends",
       "\n7 Hour TV usage: " + str(Seven_Hour_TV_Weekend))
 
 print("TV usage on weekdays",
+      "\n No TV usage" + str(Zero_Hour_TV_Weekday),
       "\n1 Less then an hour TV usage: " + str(Half_Hour_TV_Weekday),
       "\n1 Hour TV usage: " + str(One_Hour_TV_Weekday),
       "\n2 Hour TV usage: " + str(Two_Hour_TV_Weekday),
@@ -178,7 +194,8 @@ print("TV usage on weekdays",
 print("")
 
 #PC:
-Total_PC_we = ( Half_Hour_PC_Weekend +
+Total_PC_we = ( Zero_Hour_PC_Weekend +
+                Half_Hour_PC_Weekend +        
                 One_Hour_PC_Weekend +
                 Two_Hour_PC_Weekend +
                 Three_Hour_PC_Weekend + 
@@ -187,7 +204,8 @@ Total_PC_we = ( Half_Hour_PC_Weekend +
                 Six_Hour_PC_Weekend + 
                 Seven_Hour_PC_Weekend)
 
-Total_PC_wk = ( Half_Hour_PC_Weekday +
+Total_PC_wk = ( Zero_Hour_PC_Weekday +
+                Half_Hour_PC_Weekday +
                 One_Hour_PC_Weekday +
                 Two_Hour_PC_Weekday +
                 Three_Hour_PC_Weekday + 
@@ -196,7 +214,8 @@ Total_PC_wk = ( Half_Hour_PC_Weekday +
                 Six_Hour_PC_Weekday + 
                 Seven_Hour_PC_Weekday)
 #Video Games:
-Total_VG_we = ( Half_Hour_VG_Weekend +
+Total_VG_we = ( Zero_Hour_VG_Weekend +
+                Half_Hour_VG_Weekend +
                 One_Hour_VG_Weekend +
                 Two_Hour_VG_Weekend +
                 Three_Hour_VG_Weekend + 
@@ -205,7 +224,8 @@ Total_VG_we = ( Half_Hour_VG_Weekend +
                 Six_Hour_VG_Weekend + 
                 Seven_Hour_VG_Weekend)
 
-Total_VG_wk = ( Half_Hour_VG_Weekday +
+Total_VG_wk = ( Zero_Hour_VG_Weekday +
+                Half_Hour_VG_Weekday +
                 One_Hour_VG_Weekday +
                 Two_Hour_VG_Weekday +
                 Three_Hour_VG_Weekday + 
@@ -214,7 +234,8 @@ Total_VG_wk = ( Half_Hour_VG_Weekday +
                 Six_Hour_VG_Weekday + 
                 Seven_Hour_VG_Weekday)
 #Smartphone:
-Total_SP_we = ( Half_Hour_SP_Weekend +
+Total_SP_we = ( Zero_Hour_SP_Weekend +
+                Half_Hour_SP_Weekend +
                 One_Hour_SP_Weekend +
                 Two_Hour_SP_Weekend +
                 Three_Hour_SP_Weekend + 
@@ -223,7 +244,8 @@ Total_SP_we = ( Half_Hour_SP_Weekend +
                 Six_Hour_SP_Weekend + 
                 Seven_Hour_SP_Weekend)
 
-Total_SP_wk = ( Half_Hour_SP_Weekday +
+Total_SP_wk = ( Zero_Hour_SP_Weekday +
+                Half_Hour_SP_Weekday +
                 One_Hour_SP_Weekday +
                 Two_Hour_SP_Weekday +
                 Three_Hour_SP_Weekday + 
@@ -232,7 +254,8 @@ Total_SP_wk = ( Half_Hour_SP_Weekday +
                 Six_Hour_SP_Weekday + 
                 Seven_Hour_SP_Weekday)
 #TV:
-Total_TV_we = ( Half_Hour_TV_Weekend +
+Total_TV_we = ( Zero_Hour_TV_Weekend +
+                Half_Hour_TV_Weekend +
                 One_Hour_TV_Weekend +
                 Two_Hour_TV_Weekend +
                 Three_Hour_TV_Weekend + 
@@ -241,7 +264,8 @@ Total_TV_we = ( Half_Hour_TV_Weekend +
                 Six_Hour_TV_Weekend + 
                 Seven_Hour_TV_Weekend)
 
-Total_TV_wk = ( Half_Hour_TV_Weekday +
+Total_TV_wk = ( Zero_Hour_TV_Weekday +
+                Half_Hour_TV_Weekday +
                 One_Hour_TV_Weekday +
                 Two_Hour_TV_Weekday +
                 Three_Hour_TV_Weekday + 
