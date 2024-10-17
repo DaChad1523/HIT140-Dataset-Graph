@@ -98,7 +98,7 @@ Seven_Hour_TV_Weekday = len(dataset2[dataset2['T_wk'] == 7])
 
 #PC usage:
 print("PC usage on weekends",
-      "\n No PC usage" + str(Zero_Hour_PC_Weekend),
+      "\n No PC usage: " + str(Zero_Hour_PC_Weekend),
       "\n1 Less then an hour PC usage: " + str(Half_Hour_PC_Weekend),
       "\n1 Hour PC usage: " + str(One_Hour_PC_Weekend),
       "\n2 Hour PC usage: " + str(Two_Hour_PC_Weekend),
@@ -110,7 +110,7 @@ print("PC usage on weekends",
  
 
 print("PC usage on weekdays",
-      "\n No PC usage" + str(Zero_Hour_PC_Weekday),
+      "\n No PC usage: " + str(Zero_Hour_PC_Weekday),
       "\n1 Less then an hour PC usage: " + str(Half_Hour_PC_Weekday),
       "\n1 Hour PC usage: " + str(One_Hour_PC_Weekday),
       "\n2 Hour PC usage: " + str(Two_Hour_PC_Weekday),
@@ -123,7 +123,7 @@ print("")
 
 #Video games usage:
 print("Video game usage on weekends",
-      "\n No VG usage" + str(Zero_Hour_VG_Weekend),
+      "\n No VG usage: " + str(Zero_Hour_VG_Weekend),
       "\n1 Less then an hour VG usage: " + str(Half_Hour_VG_Weekend),
       "\n1 Hour VG usage: " + str(One_Hour_VG_Weekend),
       "\n2 Hour VG usage: " + str(Two_Hour_VG_Weekend),
@@ -134,7 +134,7 @@ print("Video game usage on weekends",
       "\n7 Hour VG usage: " + str(Seven_Hour_VG_Weekend))
 
 print("Video game usage on weekdays",
-      "\n No VG usage" + str(Zero_Hour_VG_Weekday),
+      "\n No VG usage: " + str(Zero_Hour_VG_Weekday),
       "\n1 Less then an hour VG usage: " + str(Half_Hour_VG_Weekday),
       "\n1 Hour VG usage: " + str(One_Hour_VG_Weekday),
       "\n2 Hour VG usage: " + str(Two_Hour_VG_Weekday),
@@ -147,7 +147,7 @@ print("")
 
 #Smart phone usage:
 print("Smart phone usage on weekends",
-      "\n No SP usage" + str(Zero_Hour_SP_Weekend),
+      "\n No SP usage: " + str(Zero_Hour_SP_Weekend),
       "\n1 Less then an hour SP usage: " + str(Half_Hour_SP_Weekend),
       "\n1 Hour SP usage: " + str(One_Hour_SP_Weekend),
       "\n2 Hour SP usage: " + str(Two_Hour_SP_Weekend),
@@ -158,7 +158,7 @@ print("Smart phone usage on weekends",
       "\n7 Hour SP usage: " + str(Seven_Hour_SP_Weekend))
 
 print("Smart phone usage on weekdays",
-      "\n No SP usage" + str(Zero_Hour_SP_Weekday),
+      "\n No SP usage: " + str(Zero_Hour_SP_Weekday),
       "\n1 Less then an hour SP usage: " + str(Half_Hour_SP_Weekday),
       "\n1 Hour SP usage: " + str(One_Hour_SP_Weekday),
       "\n2 Hour SP usage: " + str(Two_Hour_SP_Weekday),
@@ -171,7 +171,7 @@ print("")
 
 #TV usage:
 print("TV usage on weekends",
-      "\n No TV usage" + str(Zero_Hour_TV_Weekend),
+      "\n No TV usage: " + str(Zero_Hour_TV_Weekend),
       "\n1 Less then an hour TV usage: " + str(Half_Hour_TV_Weekend),
       "\n1 Hour TV usage: " + str(One_Hour_TV_Weekend),
       "\n2 Hour TV usage: " + str(Two_Hour_TV_Weekend),
@@ -182,7 +182,7 @@ print("TV usage on weekends",
       "\n7 Hour TV usage: " + str(Seven_Hour_TV_Weekend))
 
 print("TV usage on weekdays",
-      "\n No TV usage" + str(Zero_Hour_TV_Weekday),
+      "\n No TV usage: " + str(Zero_Hour_TV_Weekday),
       "\n1 Less then an hour TV usage: " + str(Half_Hour_TV_Weekday),
       "\n1 Hour TV usage: " + str(One_Hour_TV_Weekday),
       "\n2 Hour TV usage: " + str(Two_Hour_TV_Weekday),
