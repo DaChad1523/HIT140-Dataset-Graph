@@ -287,3 +287,26 @@ print(f"TSmartphone weekend: ", Total_TV_we)
 print(f"Smartphone weekday: ", Total_TV_wk)
 print("")
 print (f"Total: ", Total_PC_we + Total_PC_wk + Total_VG_we + Total_VG_wk + Total_SP_we + Total_SP_wk + Total_TV_we + Total_TV_wk)
+
+print()
+#Finding the Mean
+PC_Mean_We = dataset2['C_we'].mean()
+PC_Mean_Wk = dataset2['C_wk'].mean()
+
+VG_Mean_We = dataset2['G_we'].mean()
+VG_Mean_Wk = dataset2['G_wk'].mean()
+
+SP_Mean_We = dataset2['S_we'].mean()
+SP_Mean_Wk = dataset2['S_wk'].mean()
+
+TV_Mean_We = dataset2['T_we'].mean()
+TV_Mean_Wk = dataset2['T_wk'].mean()
+
+print(f"Average PC weekend usage: ", PC_Mean_We)
+print(f"Average PC weekday usage: ", PC_Mean_Wk)
+print(f"Average VG weekend usage: ", VG_Mean_We)
+print(f"Average VG weekday usage: ", VG_Mean_Wk)
+print(f"Average SP weekend usage: ", SP_Mean_We)
+print(f"Average SP weekday usage: ", SP_Mean_Wk)
+print(f"Average TV weekend usage: ", TV_Mean_We)
+print(f"Average TV weekday usage: ", TV_Mean_Wk)
