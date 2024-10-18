@@ -313,12 +313,11 @@ print(f"Average SP weekend usage: ", SP_Mean_We)
 print(f"Average SP weekday usage: ", SP_Mean_Wk)
 print(f"Average TV weekend usage: ", TV_Mean_We)
 print(f"Average TV weekday usage: ", TV_Mean_Wk)
-
+print()
 #Linear Regression model
-x = dataset2[['C_wk', 'G_we', 'S_we', 'S_wk', 'T_we', 'T_wk']] #'C_we','C_wk', 'G_we', 'S_we', 'S_wk', 'T_we', 'T_wk'
-y = dataset2['C_we']
+x = dataset2[['C_we','C_wk', 'G_we', 'G_wk', 'S_we', 'S_wk', 'T_we', 'T_wk']] #'C_we','C_wk', 'G_we', 'G_wk', 'S_we', 'S_wk', 'T_we', 'T_wk'
+y = dataset2[''] #input ur variable but you have to get rid of the variable above it ^
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
-
 
 model = LinearRegression()
 model.fit(X_train,y_train)
@@ -328,8 +327,16 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print(f'Mean Squared Error: {mse}')
 
+rmse = np.sqrt(mse)
+print(f'Root Mean Squared Error: {rmse}')
+
+nrmse = rmse / (y.max() - y.min())
+print(f'Normalized Root Mean Squared Error: {nrmse}')
+
+"""
 plt.scatter(y_test, y_pred, color='blue', label='Actual vs Predicted')
 plt.xlabel('Actual Values')
 plt.ylabel('Predicted Values')
 plt.legend()
 plt.show()
+"""

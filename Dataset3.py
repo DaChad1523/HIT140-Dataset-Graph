@@ -5,8 +5,10 @@ import math
 import scipy.stats as st
 import statsmodels
 import matplotlib.pyplot as plt 
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
 dataset3 = pd.read_csv("dataset3.csv")
-dataset2 = pd.read_csv("dataset2.csv")
 
 #Mean
 Optm_mean = dataset3['Optm'].mean()
@@ -101,3 +103,27 @@ print(f"Mind About Things mode", Mkmind_mode)
 print(f"Loved mode", Loved_mode)
 print(f"Interested New Things mode", Intthg_mode)
 print(f"Cheerful mode", Cheer_mode)
+print()
+
+#Linear Regression 'Optm', 'Usef', 'Relx', 'Intp', 'Engs', 'Dealprk', 'Thcklr', 'Goodme', 'Clsep', 'Conf', 'Mkmind', 'Loved', 'Intthg', 'Cheer'
+x = dataset3[['Usef', 'Relx', 'Intp', 'Engs', 'Dealpr', 'Thcklr', 'Goodme', 'Clsep', 'Conf', 'Mkmind', 'Loved', 'Intthg', 'Cheer']] 
+y = dataset3['Optm']
+
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+
+model = LinearRegression()
+model.fit(X_train,y_train)
+
+y_pred = model.predict(X_test)
+
+mse = mean_squared_error(y_test, y_pred)
+print(f'Mean Squared Error: {mse}')
+
+rmse = np.sqrt(mse)
+print(f'Root Mean Squared Error: {rmse}')
+
+nrmse = rmse / (y.max() - y.min())
+print(f'Normalized Root Mean Squared Error: {nrmse}')
+
+mse = mean_squared_error(y_test, y_pred)
+print(f'Mean Squared Error: {mse}')
