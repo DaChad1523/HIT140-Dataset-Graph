@@ -105,9 +105,9 @@ print(f"Interested New Things mode", Intthg_mode)
 print(f"Cheerful mode", Cheer_mode)
 print()
 
-#Linear Regression 'Optm', 'Usef', 'Relx', 'Intp', 'Engs', 'Dealprk', 'Thcklr', 'Goodme', 'Clsep', 'Conf', 'Mkmind', 'Loved', 'Intthg', 'Cheer'
-x = dataset3[['Usef', 'Relx', 'Intp', 'Engs', 'Dealpr', 'Thcklr', 'Goodme', 'Clsep', 'Conf', 'Mkmind', 'Loved', 'Intthg', 'Cheer']] 
-y = dataset3['Optm']
+#Linear Regression 'Optm', 'Usef', 'Relx', 'Intp', 'Engs', 'Dealpr', 'Thcklr', 'Goodme', 'Clsep', 'Conf', 'Mkmind', 'Loved', 'Intthg', 'Cheer'
+x = dataset3[['Optm', 'Usef', 'Relx', 'Intp', 'Engs', 'Dealpr', 'Thcklr', 'Goodme', 'Clsep', 'Conf', 'Mkmind', 'Loved', 'Intthg', 'Cheer']] 
+y = dataset3[''] #remove one of variable above and place it on y 
 
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
@@ -125,5 +125,3 @@ print(f'Root Mean Squared Error: {rmse}')
 nrmse = rmse / (y.max() - y.min())
 print(f'Normalized Root Mean Squared Error: {nrmse}')
 
-mse = mean_squared_error(y_test, y_pred)
-print(f'Mean Squared Error: {mse}')
